@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        td.nun {
+            text-align: right;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA DE TABELAS GRANDES:
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOTER
+                TR, TD, TH
+    -->
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+                <th>% da pop. total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="nun">41 262 199</td>
+                <td>22,2%</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="nun">19 597 330</td>
+                <td>10,0%</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="nun">15 989 929</td>
+                <td>8,0%</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="nun">14 016 906</td>
+                <td>7,1%</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="nun">10 444 526</td>
+                <td>5,7%</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="nun">10 693 929</td>
+                <td>5,3%</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="nun">8 796 448</td>
+                <td>4,4%</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="nun">8 452 381</td>
+                <td>4,3%</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="nun">7 581 051</td>
+                <td>4,1%</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="nun">6 248 436</td>
+                <td>3,7%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td class="nun">143.083.135</td>
+                <td>64,9%</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
