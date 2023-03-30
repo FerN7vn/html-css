@@ -15,6 +15,14 @@
             border-collapse: collapse;
         }
 
+        caption {
+            background-color: darkgray;
+            border: 1px solid black;
+            padding: 10px;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
@@ -25,8 +33,26 @@
             padding: 5px;
         }
 
+        tbody > tr:nth-child(odd) {
+            background-color: rgb(170, 170, 170);
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: rgb(115, 115, 115);
+        }
+
         td.nun {
             text-align: right;
+        }
+
+        td:hover {
+            background-color: red;
+        }
+
+        thead {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
         }
         
     </style>
@@ -44,11 +70,12 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
-                <th>% da pop. total</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+                <th scope="col">% da pop. total</th>
             </tr>
         </thead>
         <tbody>
@@ -105,11 +132,24 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="nun">143.083.135</td>
                 <td>64,9%</td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum illo quae numquam quasi, a cupiditate minus ipsam, eveniet dicta, architecto ea! Iusto numquam atque non fuga perspiciatis praesentium dolor nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum culpa ad assumenda ea aspernatur praesentium sed placeat? In ea illum est neque sint ducimus ad pariatur vel, blanditiis deleniti provident.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum illo quae numquam quasi, a cupiditate minus ipsam, eveniet dicta, architecto ea! Iusto numquam atque non fuga perspiciatis praesentium dolor nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum culpa ad assumenda ea aspernatur praesentium sed placeat? In ea illum est neque sint ducimus ad pariatur vel, blanditiis deleniti provident.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum illo quae numquam quasi, a cupiditate minus ipsam, eveniet dicta, architecto ea! Iusto numquam atque non fuga perspiciatis praesentium dolor nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum culpa ad assumenda ea aspernatur praesentium sed placeat? In ea illum est neque sint ducimus ad pariatur vel, blanditiis deleniti provident.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum illo quae numquam quasi, a cupiditate minus ipsam, eveniet dicta, architecto ea! Iusto numquam atque non fuga perspiciatis praesentium dolor nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum culpa ad assumenda ea aspernatur praesentium sed placeat? In ea illum est neque sint ducimus ad pariatur vel, blanditiis deleniti provident.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum illo quae numquam quasi, a cupiditate minus ipsam, eveniet dicta, architecto ea! Iusto numquam atque non fuga perspiciatis praesentium dolor nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum culpa ad assumenda ea aspernatur praesentium sed placeat? In ea illum est neque sint ducimus ad pariatur vel, blanditiis deleniti provident.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum illo quae numquam quasi, a cupiditate minus ipsam, eveniet dicta, architecto ea! Iusto numquam atque non fuga perspiciatis praesentium dolor nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum culpa ad assumenda ea aspernatur praesentium sed placeat? In ea illum est neque sint ducimus ad pariatur vel, blanditiis deleniti provident.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum illo quae numquam quasi, a cupiditate minus ipsam, eveniet dicta, architecto ea! Iusto numquam atque non fuga perspiciatis praesentium dolor nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum culpa ad assumenda ea aspernatur praesentium sed placeat? In ea illum est neque sint ducimus ad pariatur vel, blanditiis deleniti provident.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum illo quae numquam quasi, a cupiditate minus ipsam, eveniet dicta, architecto ea! Iusto numquam atque non fuga perspiciatis praesentium dolor nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum culpa ad assumenda ea aspernatur praesentium sed placeat? In ea illum est neque sint ducimus ad pariatur vel, blanditiis deleniti provident.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum illo quae numquam quasi, a cupiditate minus ipsam, eveniet dicta, architecto ea! Iusto numquam atque non fuga perspiciatis praesentium dolor nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum culpa ad assumenda ea aspernatur praesentium sed placeat? In ea illum est neque sint ducimus ad pariatur vel, blanditiis deleniti provident.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum illo quae numquam quasi, a cupiditate minus ipsam, eveniet dicta, architecto ea! Iusto numquam atque non fuga perspiciatis praesentium dolor nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum culpa ad assumenda ea aspernatur praesentium sed placeat? In ea illum est neque sint ducimus ad pariatur vel, blanditiis deleniti provident.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum illo quae numquam quasi, a cupiditate minus ipsam, eveniet dicta, architecto ea! Iusto numquam atque non fuga perspiciatis praesentium dolor nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum culpa ad assumenda ea aspernatur praesentium sed placeat? In ea illum est neque sint ducimus ad pariatur vel, blanditiis deleniti provident.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum illo quae numquam quasi, a cupiditate minus ipsam, eveniet dicta, architecto ea! Iusto numquam atque non fuga perspiciatis praesentium dolor nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum culpa ad assumenda ea aspernatur praesentium sed placeat? In ea illum est neque sint ducimus ad pariatur vel, blanditiis deleniti provident.</p>
+    
 </body>
 </html>
