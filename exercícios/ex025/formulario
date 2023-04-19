@@ -1,9 +1,0 @@
-<form action="cadastro.php" method="get">
-        <p>
-            
-        </p>
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
-</form>
