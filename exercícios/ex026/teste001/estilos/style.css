@@ -25,7 +25,7 @@ header {
     background-color: black;
     text-align: center;
     padding: 15px;
-    width: 100vw;
+    width: 103vw;
 }
 
 header > h1 {
@@ -45,7 +45,6 @@ main {
     background-color: white;
     width: 100vw;
     height: 200vh;
-    padding: 10px;
     text-align: center;
 }
 
@@ -73,5 +72,4 @@ footer a {
     color: white;
     text-decoration: none;
     font-weight: bolder;
-    width: 100vw;
 }
