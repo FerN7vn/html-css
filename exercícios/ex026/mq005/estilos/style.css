@@ -84,7 +84,6 @@ menu > ul {
  article > pre {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    width: 500px;
     margin: auto;
  }
 
@@ -101,6 +100,8 @@ menu > ul {
  }
 
  img {
+    width: 300px;
+    height: 300px;
     margin: 5px;
     position: relative;
     left: 40%;
