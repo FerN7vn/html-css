@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Responsivo</title>
+    <link rel="shortcut icon" href="imagem/smokou.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Menu Responsivo</h1>
+        <span id="burger" class="material-icons" onclick="clickMenu()">menu</span>
+    <menu id="items">
+        <ul>
+            <li><a href="#">Opção 1</a></li>
+            <li><a href="#">Opção 2</a></li>
+            <li><a href="#">Opção 3</a></li>
+            <li><a href="#">Opção 4</a></li>
+            <li><a href="#">Opção 5</a></li>
+        </ul>
+    </menu>
+</header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+
+            <p>Exercício do capítulo 25 do curso de HTML e CSS do Curso em Vídeo, onde aprenderemos a criar um menu responsívo que se adapta a diversos dispositivos com tamanhos de telas diferentes.</p>
+
+            <img src="imagem/smokou.png" alt="smokou">
+
+            <p>Estamos fazendo este exercício seguindo a metodologia <em>Mobile First</em>, ou seja, começamos fazendo o design do site para aparelhos com telas pequenas e depois fazemos as configurações para as telas maiores. O intuito das aulas 9, 10 e 11 do capítulo 25 do curso é criar um menu responsívo para telas pequenas, portanto, focaremos na configuração do menu, que nas telas pequenas estarão um em cima do outro e por isso são chamados de "menu hambúrguer" pelo Guanabara.</p>
+
+            <p>Na <a href="https://www.youtube.com/watch?v=Zp3fnf99kTg&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=36&pp=iAQB" target="_blank">aula 9</a> damos início ao projeto, criando a estrutura básica do HTML do site e algumas configurações básicas do CSS. Na <a href="https://www.youtube.com/watch?v=67W4NdxW1kw&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=37&pp=iAQB" target="_blank">aula 10</a> começamos a configurar o layout do menu, o deixando um em cima do outro. Na <a href="https://www.youtube.com/watch?v=Dd6Z3gkud18&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=38&pp=iAQB" target="_blank">aula 11</a> começamos a criar a interatividade do menu hambúrguer usando o <strong>JavaScript</strong>, mas antes disso nós importamos uma folha de estilo do Google copiando um link do site <a href="https://fonts.google.com/icons" target="_blank">Google Fonts</a> e <a href="https://developers.google.com/fonts/docs/material_icons?hl=en" target="_blank">deste outro</a> (este último inclusive ensina a como importar e usar esta folha de estilo), isso nos permite colocar o ícone do menu que você está vendo na página. Dentre esse, há vários outros ícones que podem ser usados.</p>
+
+            <p>E por fim, a interatividade. Nós usaremos o <strong>JavaScript</strong> para isso, primeiro escondemos as opções do menu com o <strong>display: none;</strong> no seletor do menu no CSS. Feito isso, nós criamos um <strong>id</strong> chamado <strong>"items"</strong> para a tag <strong>&lt;menu&gt;</strong> onde o ícone do menu está contido. Agora nós usaremos a tag <strong>&lt;script&gt;</strong> para escrever o código JavaScript.</p>
+
+            <p>Dentro da div span do ícone do menu, colocamos um evento <strong>onclick</strong> com uma function chamada <strong>"clickMenu"</strong>. Dentro da tag &lt;script&gt;, escreveremos o seguinte código: </p>
+
+            <pre>
+                <code>
+                    function clickMenu() {
+                        if (items.style.display == 'block') {
+                            items.style.display = 'none'
+                        } else {
+                            items.style.display = 'block'
+                        }
+                    }
+                </code>
+            </pre>
+
+            <p>A function <strong>clickMenu</strong> fará com que os items do menu, sejam mostrados (<strong>items.style.display == 'block'</strong>), porém, há uma condicional (<strong>if - else</strong>) para esconder-lo caso dele seja clicado novamente (<strong>items.style.display = 'none'</strong>).</p>
+        </article> 
+    </main>
+        
+    <script>
+        function clickMenu() {
+            if (items.style.display == 'block') {
+                items.style.display = 'none'
+            } else {
+                items.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
